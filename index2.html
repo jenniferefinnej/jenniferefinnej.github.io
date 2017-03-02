@@ -3,8 +3,22 @@
 	<title></title>
 	<style type = "text/css" link ="/css/2.css"></style>
 	<link rel="stylesheet" type="text/css" href="/css/2.css">
+
+	$(document).ready(function(){
+	var canvas = $("#myCanvas").get(0);
+	<!-- to get as dom element -->
+	var context = canvas.getContext("2d");
+	});
+
+	
 </head>
 <body>
+	<canvas id="myCanvas">
+		Your browser doesn't support HTML5 canvas!
+	</canvas>
+	<div id="display" style="width: 200px; height: 100px;">
+	</div>
+	<!-- set up area for image upload -->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>	
