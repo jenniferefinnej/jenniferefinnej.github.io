@@ -3,9 +3,10 @@
 }
 body{
 	padding: 30px;
-	background-color: tomato;
+	color: navy;
+	background-color: lightblue;
+	font-size: 50px;
 }
-
-canvas{
-	height: 100%;
+canvas {
+	height: 1000px;
 }

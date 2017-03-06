@@ -6,11 +6,7 @@ var context = $('canvas').get(0).getContext("2d");
 	  var userInput= $('#picval').val();
 	  var img = new Image();
 		img.src = userInput;
-	// once the user presses go
-		// var canvas = $("#myCanvas").get(0);
-	// to get the x 
-		
-	// canvas set up
+
 		$(img).load(function(){
 			context.drawImage(img, 0, 0);
 			// putting img on the canvas @ (0,0)
@@ -34,7 +30,7 @@ var context = $('canvas').get(0).getContext("2d");
 
 		var pixelData = context.getImageData(actualX, actualY, 1, 1);
 		var data = pixelData.data;
-		var pixelColor = "rgb(" +data[0] + ", " + data[1]+ ", " + data[2]+ ", " + data[3] + ")";
+		var pixelColor = "rgba(" +data[0] + ", " + data[1]+ ", " + data[2]+ ", " + data[3] + ")";
 		$('#info').apppend(pixelColor);
 		$("#display").css("backgroundColor", pixelColor);
 	});
