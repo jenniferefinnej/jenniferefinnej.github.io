@@ -5,11 +5,15 @@ body{
 	padding: 30px;
 	color: navy;
 	background-color: lightblue;
-	font-size: 50px;
+	font-size: 80px;
 	text-align: center;
 }
 button{
-	position: center;
+	font-size: 50px;
+}
+input{
+	font-size: 60px;
+	padding: 12px 20px;
 }
 canvas {
 	height: 1000px;
